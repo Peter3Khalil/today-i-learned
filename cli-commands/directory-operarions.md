@@ -53,5 +53,16 @@ find /home/user -name file.txt
 # find all files with specific extension
 find . -name "*.md"
 ```
+**Move all in current dir with excluding some folders or files**
+```bash
+# copying all folders and file to another
+rsync -av --progress . /destination/directory --exclude 'folder1' --exclude 'folder2'
+# Deleting all but some files not included
+find . -mindepth 1 -not -name 'folder1' -not -name 'folder2' -delete
+
+# to achieve moving, compine two
+rsync -av --progress . /destination/directory --exclude 'folder1' --exclude 'folder2' && find . -mindepth 1 -not -name 'folder1' -not -name 'folder2' -delete
+```
+
 
 
