@@ -1,6 +1,8 @@
 # Customize Default Form Validation
 To Customize the default form validation, you can use the `onInvalid` and `onInput` event handlers to set custom validation messages and clear them respectively.
 
+See [`customError`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/customError)
+
 ## Example
 ```tsx
 'use client';
