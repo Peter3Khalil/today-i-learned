@@ -21,3 +21,15 @@ npm install
 ```
 
 This will update your package.json with the latest versions of all dependencies and install them.
+
+## Updating Specific Packages
+
+Updating all packages can cause problems if the new versions introduce breaking changes.
+
+To avoid this, you can update specific packages by running the following command:
+
+```bash
+npm install package-name@latest
+# or
+npm install package-name@version
+```
